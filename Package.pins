@@ -1,0 +1,12 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "SParser",
+      "reason": null,
+      "repositoryURL": "https://github.com/amnykon/SParser.git",
+      "version": "1.0.2"
+    }
+  ],
+  "version": 1
+}
