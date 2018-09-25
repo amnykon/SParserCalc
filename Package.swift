@@ -1,14 +1,18 @@
+// swift-tools-version:4.0
 import PackageDescription
- 
+
 let package = Package(
   name: "SParserCalc",
-  targets: [
-    Target(
-      name: "SParserCalc"
-    ),
-  ],
   dependencies: [
-    .Package(url: "https://github.com/amnykon/SParser.git", majorVersion: 1, minor: 0),
+    .package(url: "https://github.com/amnykon/SParser.git", from: "1.1.0"),
+  ],
+  targets: [
+    .target(
+      name: "SParserCalc",
+        dependencies: [
+          .product(name: "SParserLibs"),
+        ]
+    ),
   ]
 )
 
